@@ -69,9 +69,6 @@ li {
 
 .main-img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
   margin: 0 auto;
 }
 
@@ -84,8 +81,8 @@ li {
 }
 
 .main-container {
-  width: 600px;
-  height: 500px;
+  width: 33%;
+  height: auto;
   margin: 0 auto;
   padding: 40px;
   text-align: center;
@@ -329,7 +326,23 @@ button:hover {
 
 @media only screen and (max-width:900px) {
   
-  input , button {
+  .main-container {
+    width: 80%;
+  }
+
+  .main-img {
+    width: 80%;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+
+  .img-container , .productive-container {
+    margin: 0 auto;
+  }
+
+  input , button:not(.started) {
     display: block;
     width: 100%;
     margin: 15px 0;
@@ -340,13 +353,22 @@ button:hover {
     padding: 10px;
   }
 
+  footer ul {
+    float: left;
+  }
+
+  footer {
+    overflow: hidden;
+    text-align: left;
+  }
+
   .footer-container {
     flex-direction: column;
     align-content:  center;
   }
 
   .footer-box {
-    padding: 5vw;
     margin: 0 auto;
+    padding: 20px;
   }
 }
